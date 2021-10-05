@@ -41,11 +41,11 @@ def rectangle_triangle string
             puts "Aligators swim away"
         else
             puts "water is full of aligators"
-    puts   "/  \    /  \/  _  \  /   _____/\__    ___/\_   _____/\______ \  
-            \   \/\/   /  /_\  \ \_____  \   |    |    |    __)_  |    |  \ 
-             \        /    |    \/        \  |    |    |        \ |    `   \
-              \__/\  /\____|__  /_______  /  |____|   /_______  //_______  /
-                   \/         \/        \/                    \/         \/"
+    puts   "
+    _  _  __  ____ ____ ____ ____ 
+   / )( \/ _\/ ___|_  _|  __|    \
+   \ /\ /    \___ \ )(  ) _) ) D (
+   (_/\_)_/\_(____/(__)(____|____/"
         end
     end
     def inside_rectangle string
@@ -82,3 +82,4 @@ rectangle_triangle gets.chomp
 
 #options = [1, 2, 3, 4]
 #p options.sample
+
