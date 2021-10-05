@@ -36,10 +36,34 @@ The right door is the shape of a triangle.'
 puts 'Which door while you enter?'
 
 def rectangle_triangle string
+    def inside_triangle string
+        if string.downcase == 'rock'
+            puts "Aligators swim away"
+        else
+            puts "water is full of aligators"
+    puts   "/  \    /  \/  _  \  /   _____/\__    ___/\_   _____/\______ \  
+            \   \/\/   /  /_\  \ \_____  \   |    |    |    __)_  |    |  \ 
+             \        /    |    \/        \  |    |    |        \ |    `   \
+              \__/\  /\____|__  /_______  /  |____|   /_______  //_______  /
+                   \/         \/        \/                    \/         \/"
+        end
+    end
+    def inside_rectangle string
+            if string.downcase == 'key'
+                puts "a box appears before you"
+            else
+                puts "you find a fake ruby"
+            end
+    end
     if string.downcase == 'triangle'
         puts 'The door is small. You crawl into a narrow hallway.'
+        puts "you come to a body of water. Do you enter the water or throw a rock?"
+        puts inside_triangle gets.chomp
+
     elsif string.downcase == 'rectangle'
         puts "You enter and walk down a long hallway and enter a big cavern. (slight breeze passes through)"
+        puts "infront of you is a key and gem ,what do you take?"
+    puts inside_rectangle gets.chomp
     else
         puts "This is not a door! (booby trap activated) Spikes start falling from ceiling!"
         sleep 0.05
@@ -48,9 +72,13 @@ def rectangle_triangle string
             sleep 1
             end
             puts 'DEAD'
+        
     end
+    
 end
+ 
+
 rectangle_triangle gets.chomp 
 
-options = [1, 2, 3, 4]
-p options.sample
+#options = [1, 2, 3, 4]
+#p options.sample
