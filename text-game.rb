@@ -42,10 +42,15 @@ def rectangle_triangle string
         puts "You enter and walk down a long hallway and enter a big cavern. (slight breeze passes through)"
     else
         puts "This is not a door! (booby trap activated) Spikes start falling from ceiling!"
+        sleep 0.05
+            5.downto(0) do |i|
+            puts "00:00:#{'%02d' % i}"
+            sleep 1
+            end
+            puts 'DEAD'
     end
 end
 rectangle_triangle gets.chomp 
 
-# options = [1, 2, 3, 4]
-# p options.sample
-
+options = [1, 2, 3, 4]
+p options.sample
